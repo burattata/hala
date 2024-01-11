@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400&display=swap">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://www.transparenttextures.com/patterns/flowers.png'); /* Subtle flower pattern */
+            background-color: #ffd6e8; /* Light pink background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .content {
+            text-align: center;
+            background-color: rgba(255, 245, 250, 0.9); /* Slightly higher opacity */
+            backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive; /* Use Pacifico font */
+            color: #ff3366;
+            text-transform: uppercase;
+            font-size: 28px; /* Increased font size */
+            margin-bottom: 20px;
+        }
+
+        .text-column {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        img {
+            width: 150px; /* Set the width of the image */
+            height: auto;
+            border-radius: 20px;
+            margin-right: 20px; /* Add space between image and text */
+            border: 5px solid #ff3366; /* Pink floating border */
+            padding: 5px; /* Adjust padding to control border distance */
+            background-color: #fff; /* Ensure the background is white inside the border */
+        }
+
+        p {
+            margin-top: 0;
+            color: #555;
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for additional text */
+        }
+
+        .rating-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .star {
+            font-size: 24px;
+            color: #ffd700; /* Star color */
+            cursor: pointer;
+        }
+
+        .star:hover {
+            color: #ff3366; /* Hover color */
+        }
+
+        .comment-section {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #ff3366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Happy monthsary Miggie!!!</h1>
+        <div class="text-column">
+            <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/415254241_1095906751752165_3080779679333749244_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHcLlk9lt3OHoE-jfD0b8UC1FEnjVWefRbUUSeNVZ59Fj8x4J97ElnaFy8XwX7_mBWVwS4_xazljiNDGr8fvHbS&_nc_ohc=USIE7e4sIvwAX-ciWdU&_nc_ht=scontent.fmnl17-2.fna&oh=03_AdQktG9WlWjHUIDAVr7SwMbRXPXOXmTVyzRJeyEbEbQVpw&oe=65C74B58" alt="Profile Picture">
+            <p>Hi honey! Happy 6th monthsary! It's been tough when you're not around, but you're always here within my heart. Thank you for showing a new perspective and new paths in life—paths and roads that leads to you. This pakulo is not made to pressure you, babe (I know you still feel like that), but I'm here to show my genuine love. This might not seem impressive, but I did this to the best of my ability. I wanted to impress you by showing you something different—something that looks simple yet is complicated on the inside to metaphorically imply that sometimes I overly think and land on a simple conclusion without giving it any thought.
+
+                I want to take this opportunity to properly apologize to you, babe, for how I've been acting these past few weeks. I hope you understand me too. I love you, baby. I won't try something stupid like losing you, man; I'll do my best. I love you, hon. I love being yours. I love the feeling of being called your "baby." I love spending my time with you. Thank you for being my safe space and my other half.</p>
+        </div>
+
+        <div class="rating-container">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+
+        <div class="comment-section">
+            <h2>Leave a Comment</h2>
+            <form id="commentForm">
+                <textarea rows="4" placeholder="Type your comment here..." name="comment"></textarea>
+                <button type="button" onclick="submitComment()">Submit Comment</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function rate(rating) {
+            alert('You rated ' + rating + ' stars!');
+            // You can perform additional actions with the rating, such as sending it to a server.
+        }
+
+        function submitComment() {
+            var comment = document.forms["commentForm"]["comment"].value;
+            if (comment.trim() !== "") {
+                alert('Comment submitted: ' + comment);
+                // You can perform additional actions with the comment, such as sending it to a server.
+            } else {
+                alert('Please enter a comment.');
+            }
+        }
+    </script>
+
+</body>
+</html>
+    
